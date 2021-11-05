@@ -60,11 +60,11 @@ namespace UnityEditor
                 "using UnityEngine;\n" +
                 "using UnityEngine.UIElements;\n\n" +
                 "    #ROOTNAMESPACEBEGIN#\n" +
-                "public class #SCRIPTNAME# : MonoBehaviour\n" +
+                "public class #SCRIPTNAME# : Editor\n" +
                 "{\n" +
                 "    #NOTRIM#\n" +
                 "}\n" +
-                "#ROOTNAMESPACEEND#" +
+                "#ROOTNAMESPACEEND#\n" +
                 "#endif"
             },
             {
@@ -123,7 +123,7 @@ namespace UnityEditor
                 "using UnityEngine;\n\n" +
                 "    #ROOTNAMESPACEBEGIN#\n" +
                 "[Serializable]\n" +
-                "public abstract class #SCRIPTNAME# : MonoBehaviour\n" +
+                "public abstract class #SCRIPTNAME#\n" +
                 "{\n" +
                 "    #NOTRIM#\n" +
                 "}\n" +
@@ -137,7 +137,7 @@ namespace UnityEditor
                 "using UnityEngine;\n\n" +
                 "    #ROOTNAMESPACEBEGIN#\n" +
                 "[Serializable]\n" +
-                "public abstract class #SCRIPTNAME#\n" +
+                "public class #SCRIPTNAME#\n" +
                 "{\n" +
                 "    #NOTRIM#\n" +
                 "}\n" +
