@@ -5,6 +5,7 @@ namespace UnityEditor
     internal static class ContextMenuExtension
     {
         private const string ScriptsAssetMenuPath = "Assets/Create Script/";
+        private const string AssetMenuPath = "Assets/";
 
         private static string _templatePath;
         private static string _templateExtension;
@@ -108,6 +109,12 @@ namespace UnityEditor
         private static void CreateAbstractMonoBehaviourScript()
         {
             ContextMenuExtension.CreateScript("AbstractMonoBehaviourScript");
+        }
+
+        [MenuItem(ContextMenuExtension.AssetMenuPath + "Show Log folder in Explorer", false)]
+        private static void ShowLogFolderInExplorer()
+        {
+            EditorUtility.RevealInFinder(LogUtilities.LogDirectory);
         }
     }
 }

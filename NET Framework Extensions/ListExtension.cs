@@ -3,6 +3,7 @@
     public static class ListExtension
     {
         private static readonly string _listEmptyErrorMessage = "Error: List is empty!";
+        private static readonly Random _random = new Random();
 
         public static bool IsEmpty<T>(this List<T> list)
         {
@@ -42,7 +43,7 @@
         {
             if (list.IsNotEmpty())
             {
-                return list[UnityEngine.Random.Range(0, list.Count)];
+                return list[ListExtension._random.Next(0, list.Count)];
             }
             else
             {
