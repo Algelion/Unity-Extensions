@@ -199,8 +199,6 @@ namespace UnityEditor
 
         public static void GenerateScriptTemplates()
         {
-            Debug.Log("Generate Script Templates");
-
             if(Directory.Exists(ScriptTemplatesGenerator.ScriptTemplatePath) == false)
             {
                 Directory.CreateDirectory(ScriptTemplatesGenerator.ScriptTemplatePath);
