@@ -50,21 +50,7 @@
     <Compile Include="ContextMenuExtension.cs" />
     <Compile Include="ReadOnlyDrawer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Script Templates\AbstractClass.txt" />
-    <Content Include="Script Templates\AbstractMonoBehaviourScript.txt" />
-    <Content Include="Script Templates\Class.txt" />
-    <Content Include="Script Templates\EditorScript.txt" />
-    <Content Include="Script Templates\Enum.txt" />
-    <Content Include="Script Templates\Interface.txt" />
-    <Content Include="Script Templates\MonoBehaviourScript.txt" />
-    <Content Include="Script Templates\ScriptableObject.txt" />
-    <Content Include="Script Templates\SerializableAbstractClass.txt" />
-    <Content Include="Script Templates\SerializableClass.txt" />
-    <Content Include="Script Templates\SerializableStruct.txt" />
-    <Content Include="Script Templates\StaticClass.txt" />
-    <Content Include="Script Templates\Struct.txt" />
+    <Compile Include="ScriptTemplatesGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NET Framework Extensions\NET Framework Extensions.csproj">

@@ -1,3 +1,4 @@
+using System.IO;
 using UnityEngine;
 
 namespace UnityEditor
@@ -13,6 +14,11 @@ namespace UnityEditor
 
         static ContextMenuExtension()
         {
+            if (Directory.Exists(ContextMenuExtension._templatePath) == false)
+            {
+                ScriptTemplatesGenerator.GenerateScriptTemplates();
+            }
+
             ContextMenuExtension._templatePath = Application.dataPath + "/Editor/Script Templates/";
             ContextMenuExtension._templateExtension = ".txt";
             ContextMenuExtension._assetExtension = ".cs";
@@ -23,6 +29,11 @@ namespace UnityEditor
             string templateFilePath = ContextMenuExtension._templatePath + name
                 + ContextMenuExtension._templateExtension;
             string defaultFileName = "New" + name + ContextMenuExtension._assetExtension;
+
+            if(Directory.Exists(ContextMenuExtension._templatePath) == false)
+            {
+                ScriptTemplatesGenerator.GenerateScriptTemplates();
+            }
 
             ProjectWindowUtil.CreateScriptAssetFromTemplateFile(templateFilePath, defaultFileName);
         }
@@ -48,7 +59,7 @@ namespace UnityEditor
         [MenuItem(ContextMenuExtension.ScriptsAssetMenuPath + "C# Class/C# Default Class", false)]
         private static void CreateClass()
         {
-            ContextMenuExtension.CreateScript("Class");
+            ContextMenuExtension.CreateScript("DefaultClass");
         }
 
         [MenuItem(ContextMenuExtension.ScriptsAssetMenuPath + "C# Class/C# Static Class", false)]
