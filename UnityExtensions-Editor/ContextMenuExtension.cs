@@ -122,8 +122,8 @@ namespace UnityEditor
             ContextMenuExtension.CreateScript("AbstractMonoBehaviourScript");
         }
 
-        [MenuItem(ContextMenuExtension.AssetMenuPath + "Show Log folder in Explorer", false)]
-        private static void ShowLogFolderInExplorer()
+        [MenuItem(ContextMenuExtension.AssetMenuPath + "Reveal Log Folder in Finder", false)]
+        private static void RevealLogFolderinFinder()
         {
             EditorUtility.RevealInFinder(LogUtilities.LogDirectory);
         }
