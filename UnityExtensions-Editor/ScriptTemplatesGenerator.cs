@@ -12,188 +12,176 @@ namespace UnityEditor
         {
             {
                 "AbstractClass", 
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public abstract class #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#" 
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public abstract class #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "AbstractMonoBehaviourScript",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public abstract class #SCRIPTNAME# : MonoBehaviour 
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public abstract class #SCRIPTNAME# : MonoBehaviour\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "DefaultClass",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public class #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public class #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "EditorScript",
-                @"#if UNITY_EDITOR
-                using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEditor;
-                using UnityEditor.UIElements;
-                using UnityEngine;
-                using UnityEngine.UIElements;
-
-                    #ROOTNAMESPACEBEGIN#
-                public class #SCRIPTNAME# : Editor
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#
-                #endif"
+                "#if UNITY_EDITOR\n" +
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEditor;\n" +
+                "using UnityEditor.UIElements;\n" +
+                "using UnityEngine;\n" +
+                "using UnityEngine.UIElements;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public class #SCRIPTNAME# : MonoBehaviour\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#" +
+                "#endif"
             },
             {
                 "Enum",
-                @"#ROOTNAMESPACEBEGIN#
-                public enum #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public enum #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "Interface",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public interface #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public interface #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "MonoBehaviourScript",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public class #SCRIPTNAME# : MonoBehaviour 
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public class #SCRIPTNAME# : MonoBehaviour\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "ScriptableObject",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public class #SCRIPTNAME# : ScriptableObject
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public class #SCRIPTNAME# : ScriptableObject\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "SerializableAbstractClass",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                [Serializable]
-                public abstract class #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "[Serializable]\n" +
+                "public abstract class #SCRIPTNAME# : MonoBehaviour\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "SerializableClass",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                [Serializable]
-                public class #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "[Serializable]\n" +
+                "public abstract class #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "SerializableStruct",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                [Serializable]
-                public struct #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "[Serializable]\n" +
+                "public struct #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "StaticClass",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public static class #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public static class #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
             {
                 "Struct",
-                @"using System;
-                using System.Collections;
-                using System.Collections.Generic;
-                using UnityEngine;
-
-                    #ROOTNAMESPACEBEGIN#
-                public struct #SCRIPTNAME#
-                {
-                    #NOTRIM#
-                }
-                #ROOTNAMESPACEEND#"
+                "using System;\n" +
+                "using System.Collections;\n" +
+                "using System.Collections.Generic;\n" +
+                "using UnityEngine;\n\n" +
+                "    #ROOTNAMESPACEBEGIN#\n" +
+                "public struct #SCRIPTNAME#\n" +
+                "{\n" +
+                "    #NOTRIM#\n" +
+                "}\n" +
+                "#ROOTNAMESPACEEND#"
             },
         };
 
