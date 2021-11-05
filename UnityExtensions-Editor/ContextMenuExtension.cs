@@ -74,7 +74,7 @@ namespace UnityEditor
             ContextMenuExtension.CreateScript("AbstractClass");
         }
 
-        [MenuItem(ContextMenuExtension.ScriptsAssetMenuPath + "C# Struct/C# Serializable Class", false)]
+        [MenuItem(ContextMenuExtension.ScriptsAssetMenuPath + "C# Class/C# Serializable Class", false)]
         private static void CreateSerializableClass()
         {
             ContextMenuExtension.CreateScript("SerializableClass");
